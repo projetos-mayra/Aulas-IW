@@ -1,0 +1,258 @@
+
+  html{
+
+        scroll-behavior: smooth;
+
+
+       }
+
+
+
+ body{ 
+         background-image: url("../img/paisagem.jpg");
+         background-repeat: round;         
+         font-family: arial , sans-serif
+
+      }
+
+  header, footer{
+    background-color: rgba(65,105,225);
+    padding: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+  }   
+    
+  .menu-opcoes{
+    text-align: center;
+  }
+
+  .fixo{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+  }
+
+  .ajustes{
+    
+    line-height: 1;
+    text-align: center;
+  }
+
+  .ajustes li:hover{
+    background-color: #8A2BE2;
+    
+  }
+  
+  .container{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+  }
+
+   /*tela menor que 599px */  
+@media screen and (max-width: 599px){
+  .container{
+    margin-top:40%;     
+  }
+  }
+  /*tela maior que 600px */ 
+@media screen and(min-width:600px){
+  .container{
+    margin-top:60%;       
+  }
+  }
+
+    /*telas maiores que 768px */
+@media screen and (min-width:768px) {
+    .container{
+    margin-top:15%; }
+
+    header{
+      background-color: rgba(65,105,225);
+      flex-direction: row;
+      position: relative;
+      height: 100px;
+    }
+
+    .menu-opcoes{
+
+      position: absolute;
+      right: 5%;
+      top:45%;
+    }
+
+    .menu-opcoes ul li{
+
+      display: inline;
+      margin-left: 10px; 
+    }
+
+    .imglogo{
+
+      position: absolute;
+      top:20px;
+      left: 5%;
+    }
+
+
+  }
+      
+
+ h1{
+
+    font-size: 2em;
+
+      }
+
+ h2{
+        
+    font-size: 1.5em;
+      }
+
+
+      p{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.2em;
+        text-align justify;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+
+         
+
+      }
+
+      .titulos{
+      text-align: center;
+      color: #fff;
+      font-weight: bolder;
+      margin-top: 2%;
+      margin-bottom: 2%;      
+      }
+
+      .centro{
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: auto;
+
+
+
+      }
+
+
+
+      .imgtexto {
+
+           width: 55%;
+           
+
+
+      }
+
+      .fixoo {
+        text-align: center;
+        color: #fff;
+        
+        
+
+      }
+
+      .imglogo{
+
+        position: absolute;
+        top: 20px;
+        left: 5%;
+      }
+      
+     
+     .listastexto {
+
+             font-style: none;
+             text-decoration: underline;
+             color: #fff;
+             font-weight: bolder;
+             font-size: 20px;
+            
+
+      }
+ figure {
+
+             text-align: center;
+      }
+
+     .tablelista{ 
+            color: #fff;
+            font-weight: bold;
+            width: 100% ;
+            border-collapse: collapse;  
+
+
+       }
+     a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+       }
+
+     a:hover {
+       color: red;
+       background-color: transparent;
+       text-decoration: underline;
+           }
+
+     a:active {
+       color: red;
+       background-color: transparent;
+       text-decoration: underline;
+            }
+
+
+
+
+       
+
+       tr: nth-child(even) {
+        background-color: #fff;
+
+
+
+            }
+
+       td,th {
+
+         
+          border: 5px double #87CEFA;
+          padding: 10px;
+          font-weight: bold;
+          text-align: justify;
+          font-size: 100%;
+          text-align: center;
+
+             }
+
+    
+
+       div{
+        font-size: 1,20px;
+        width: auto;
+
+
+             }
+
+       a{
+        text-align: center;
+
+             }
