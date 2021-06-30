@@ -17,6 +17,7 @@
 
   header, footer{
     background-color: rgba(65,105,225);
+    background-color: #8A2BE2;
     padding: 1%;
     position: relative;
     display: flex;
@@ -58,57 +59,60 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    margin-bottom: 5%;
 
   }
 
-   /*tela menor que 599px */  
-@media screen and (max-width: 599px){
-  .container{
-    margin-top:40%;     
-  }
-  }
-  /*tela maior que 600px */ 
-@media screen and(min-width:600px){
-  .container{
-    margin-top:60%;       
-  }
+  #sobre{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
   }
 
-    /*telas maiores que 768px */
-@media screen and (min-width:768px) {
-    .container{
-    margin-top:15%; }
+  #sobre .sobre{
 
-    header{
-      background-color: rgba(65,105,225);
-      flex-direction: row;
-      position: relative;
-      height: 100px;
-    }
+    text-align: center;
+  }
 
-    .menu-opcoes{
+  #galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 5px 10px;
 
-      position: absolute;
-      right: 5%;
-      top:45%;
-    }
+  }
 
-    .menu-opcoes ul li{
+  #galeria .galeria{
 
-      display: inline;
-      margin-left: 10px; 
-    }
-
-    .imglogo{
-
-      position: absolute;
-      top:20px;
-      left: 5%;
-    }
+    text-align: center;
+    padding: 40px;
 
 
   }
-      
+
+  .imggaleria{
+
+    width: 65%;
+    border-radius: 50px;
+    box-shadow: 10px 10px #87CEFA;
+
+
+  }
+
+  .imgsobre{
+
+    width: 35%;
+    transition: width 2s, height 2s, transform 2s;
+  } 
+
+  .imgsobre:houver{
+
+    transform: rotate(180deg);
+   }
 
  h1{
 
@@ -121,6 +125,11 @@
     font-size: 1.5em;
       }
 
+  h3{
+
+    font-size: 1.0em;
+    color: #fff;
+  }
 
       p{
         color: #fff;
@@ -198,7 +207,7 @@
             font-weight: bold;
             width: 100% ;
             border-collapse: collapse;  
-
+     
 
        }
      a:visited {
@@ -256,3 +265,151 @@
         text-align: center;
 
              }
+
+
+        .testeri{
+
+           float: left;
+           vertical-align: middle;
+           margin-right: 5%;
+        }
+
+        .fundo{
+
+          background: #DDA0DD;
+          width:80%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 3%;
+          font-size: 1.2em;
+        }
+
+        .distancia{
+          margin-top:4%; 
+          margin-bottom: 4%;
+
+
+        }
+
+        input[type=text], textarea {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #C71585;
+          border-radius: 8px;
+          box-sizing: border-box;
+}
+        input[type=submit] {
+         width: 100%;
+         background-color: #9932CC;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+}        
+
+        fieldset{
+
+          width: 95%;
+          border: 2px solid #C71585;
+          padding: 2%;
+
+        }
+
+        .item{
+
+          position: relative;
+          margin: 10px 0px;
+
+        }
+
+        .item::before{
+          content: '';
+          position: relative;
+          left: 0;
+          top:0;
+          padding: 10px 15px;
+          background-image: url('../img/li.png');
+          background-repeat: no-repeat;
+          background-size: cover: 
+          margin-right: 5px;
+        }
+
+   /*tela menor que 599px */  
+@media screen and (max-width: 599px){
+  .container{
+    margin-top:40%;     
+  }
+  }
+  /*tela maior que 600px */ 
+@media screen and(min-width:600px){
+  .container{
+    margin-top:60%;       
+  }
+  }
+
+    /*telas maiores que 768px */
+@media screen and (min-width:768px) {
+    .container{
+    margin-top:15%; }
+
+    header{
+      background-color:rgba(65,105,225);
+      background-color: #8A2BE2;
+      flex-direction: row;
+      position: relative;
+      height: 100px;
+    }
+
+    .menu-opcoes{
+
+      position: absolute;
+      right: 5%;
+      top:45%;
+    }
+
+    .menu-opcoes ul li{
+
+      display: inline;
+      margin-left: 10px; 
+    }
+
+    .imglogo{
+
+      position: absolute;
+      top:20px;
+      left: 5%;
+    }
+
+    #sobre, #galeria{
+
+     flex-direction: row;
+     flex-wrap: wrap;
+    }
+
+    #sobre h1, h3, {  
+       width: 100%;
+       text-align: center;
+
+     }
+
+     #sobre .sobre{
+
+      width: 20%;
+      text-align: center;
+
+
+     }
+
+      #galeria .galeria{
+
+        width: 40%;
+      }
+
+
+  }        
+
+        
